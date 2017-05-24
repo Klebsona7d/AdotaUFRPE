@@ -14,7 +14,7 @@ public class Programa {
 		cachorro.setNome("Pixoto");
 		cachorro.setCodigo("TD4201");
 		
-		Animal[] animais = new Animal[3];
+		Animal[] animais = new Animal[2];
 		animais[0] = cachorro;
 		animais[1] = cachorro2;
 		

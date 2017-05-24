@@ -1,6 +1,4 @@
 package com.lidymonteiro.base;
-
-import static java.sql.JDBCType.NULL;
 import java.util.ArrayList;
 
 public class Animal {
