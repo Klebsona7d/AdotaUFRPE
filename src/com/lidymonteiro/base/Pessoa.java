@@ -8,6 +8,12 @@ public class Pessoa {
 	public Pessoa() {
 		System.out.println("Objeto da classe Pessoa instanciado com sucesso!");
 	}
+
+        public Pessoa(String login, String senha, String email) {
+            this.login = login;
+            this.senha = senha;
+            this.email = email;
+        }
 	
 	public String getLogin() {
 		return this.login;
@@ -32,5 +38,11 @@ public class Pessoa {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+    @Override
+    public String toString() {
+        return String.format("(%s ,%s)", this.email,this.login); //To change body of generated methods, choose Tools | Templates.
+    }
+        
 		
 }

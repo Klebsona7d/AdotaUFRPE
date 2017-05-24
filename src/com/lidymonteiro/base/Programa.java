@@ -17,7 +17,11 @@ public class Programa {
 		Animal[] animais = new Animal[2];
 		animais[0] = cachorro;
 		animais[1] = cachorro2;
-		
+                Endereco e =new  Endereco("primeira", "campos", "", new Cidade(), 2, "78000000","4444","33333");
+                Endereco e2 =new  Endereco("segunda", "vila", "", new Cidade(), 2, "78000000","4422","33322");
+                animais[0].setLocaisPossivel(e);
+                animais[0].setLocaisPossivel(e2);
+                
 		String codigo = "AC9001";
 		
 		//System.out.println(animais.length());

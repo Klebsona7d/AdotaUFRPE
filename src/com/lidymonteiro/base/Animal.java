@@ -13,7 +13,7 @@ public class Animal {
    private double peso;
    private String porte;
    private String pelagem;
-   private String local;
+   private Endereco local;
    private String foto;
    private String biografia;
    ArrayList<Endereco> locaisPossivel= new ArrayList<>();
@@ -123,12 +123,12 @@ public class Animal {
 	}
 	
 	
-	public String getLocal() {
+	public Endereco getLocal() {
 		return local;
 	}
 	
 	
-	public void setLocal(String local) {
+	public void setLocal(Endereco local) {
 		this.local = local;
 	}
 	
