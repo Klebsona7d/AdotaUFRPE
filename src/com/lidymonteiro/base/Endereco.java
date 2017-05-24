@@ -14,7 +14,18 @@ public class Endereco {
 		System.out.println("Objeto da classe Endereco instanciado com sucesso!");
 	}
 
-	public String getRua() {
+        public Endereco(String rua, String bairro, String complemento, Cidade cidade, int numero, String cep, String celular, String telefone) {
+        this.rua = rua;
+        this.bairro = bairro;
+        this.complemento = complemento;
+        this.cidade = cidade;
+        this.numero = numero;
+        this.cep = cep;
+        this.celular = celular;
+        this.telefone = telefone;
+        }
+        
+        public String getRua() {
 		return rua;
 	}
 
