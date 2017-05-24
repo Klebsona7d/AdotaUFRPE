@@ -16,7 +16,7 @@ public class Animal {
    private Endereco local;
    private String foto;
    private String biografia;
-   ArrayList<Endereco> locaisPossivel= new ArrayList<>();
+   private ArrayList<Endereco> locaisPossivel= new ArrayList<>();
   
    public Animal(){
 	   System.out.println("Objeto da classe Animal instanciado com sucesso!"); 
