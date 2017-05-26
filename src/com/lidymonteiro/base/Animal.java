@@ -1,4 +1,6 @@
 package com.lidymonteiro.base;
+import java.util.ArrayList;
+
 public class Animal {
    
    private String codigo;
@@ -11,10 +13,10 @@ public class Animal {
    private double peso;
    private String porte;
    private String pelagem;
-   private String local;
+   private Endereco local;
    private String foto;
    private String biografia;
-   
+   private ArrayList<Endereco> locaisPossivel= new ArrayList<>();
   
    public Animal(){
 	   System.out.println("Objeto da classe Animal instanciado com sucesso!"); 
@@ -24,8 +26,8 @@ public class Animal {
 	public String getCodigo() {
 		return codigo;
 	}
-	
-	
+
+  
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
@@ -121,12 +123,12 @@ public class Animal {
 	}
 	
 	
-	public String getLocal() {
+	public Endereco getLocal() {
 		return local;
 	}
 	
 	
-	public void setLocal(String local) {
+	public void setLocal(Endereco local) {
 		this.local = local;
 	}
 	
@@ -149,9 +151,21 @@ public class Animal {
 	public void setBiografia(String biografia) {
 		this.biografia = biografia;
 	}
-   
-
-
+        public Endereco getLocaisPossivel(int x) {
+            if (locaisPossivel.isEmpty()) {
+                return null;
+            }
+            else{
+                return locaisPossivel.get(x);
+            }
+        }
+        public void setLocaisPossivel(Endereco x)
+        {
+            this.locaisPossivel.add(x);
+        }
+          
+        
+	
 public boolean existeAnimal(String codigo, Animal[] animais){
 
 	for (Animal animai : animais) {
